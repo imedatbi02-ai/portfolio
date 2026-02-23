@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Présentation</title>
+    <meta name="description" content="Portfolio professionnel - Page de présentation">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass-effect">
+        <div class="nav-brand">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Présentation</a></li>
+            <li><a href="stage1.html">Stage 1</a></li>
+            <li><a href="stage2.html">Stage 2</a></li>
+            <li><a href="projet.html">Projets</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="container fade-in">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Bienvenue</span>
+                <h1 class="gradient-text">Bonjour, Voici mon Port folio</h1>
+                <p class="hero-subtitle">
+                    Je m'appelle Imed ATBI. Découvrez mon parcours, mes compétences en réseaux et cybersécurité, ainsi
+                    que mes expériences professionnelles.
+                </p>
+                <div class="btn-group">
+                    <a href="projet.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="stage1.html" class="btn btn-secondary glass-effect">Découvrir mes stages</a>
+                </div>
+            </div>
+            <div class="hero-image glass-effect">
+                <div style="text-align: center;">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Contact</h3>
+                    <p style="font-size: 1rem; margin-bottom: 0.2rem;">📞 06 29 36 07 07</p>
+                    <p style="font-size: 1rem; margin-bottom: 0.2rem;">✉️ imedatbi02@gmail.com</p>
+                    <p style="font-size: 1rem; margin-bottom: 0;">📍 Grigny, 69520</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section scroll-reveal">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="about-grid">
+                <div class="card glass-effect">
+                    <div class="card-icon">🔐</div>
+                    <h3>Réseaux et Sécurité</h3>
+                    <p>Configuration et sécurisation de réseaux, mise en place de plusieurs VLAN, et
+                        utilisation/configuration de PfSense.</p>
+                </div>
+                <div class="card glass-effect">
+                    <div class="card-icon">🖥️</div>
+                    <h3>Systèmes et Virtualisation</h3>
+                    <p>Administration Linux, utilisation de Docker pour la gestion de services et virtualisation
+                        d'environnements.</p>
+                </div>
+                <div class="card glass-effect">
+                    <div class="card-icon">💻</div>
+                    <h3>Développement</h3>
+                    <p>Création de sites web en HTML/CSS, commande et programmation de cartes Arduino.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section scroll-reveal" style="margin-top: 4rem;">
+            <h2 class="section-title">Mon Parcours</h2>
+            <div class="timeline" style="margin-bottom: 2rem;">
+                <div class="timeline-item glass-effect scroll-reveal">
+                    <h3 style="color: var(--primary-color);">2023 - 2024</h3>
+                    <h4>Obtention du Baccalauréat Professionnel</h4>
+                </div>
+                <div class="timeline-item glass-effect scroll-reveal" style="transition-delay: 0.1s;">
+                    <h3 style="color: var(--primary-color);">2022 - 2023</h3>
+                    <h4>Validation de la certification CISCO</h4>
+                </div>
+                <div class="timeline-item glass-effect scroll-reveal" style="transition-delay: 0.2s;">
+                    <h3 style="color: var(--primary-color);">2020 - 2021</h3>
+                    <h4>Obtention du diplôme National du Brevet avec l'ASSR 1 et 2</h4>
+                </div>
+            </div>
+        </section>
+        <section class="about-section scroll-reveal" style="margin-top: 4rem;">
+            <h2 class="section-title">Mes Objectifs</h2>
+            <div class="glass-effect"
+                style="padding: 2.5rem; border-radius: 16px; max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin: 0;">
+                    Acquérir encore plus d'expérience en entreprise, apprendre sans cesse de nouvelles choses et
+                    exceller dans plusieurs domaines différents, que ce soit le développement ou le réseau. Réussir à
+                    anticiper, à l'avenir, les compétences les plus recherchées par les entreprises.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

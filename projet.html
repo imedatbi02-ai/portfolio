@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Projets</title>
+    <meta name="description" content="Portfolio professionnel - Mes Projets">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2" style="top: 80%; left: 10%;"></div>
+
+    <nav class="navbar glass-effect">
+        <div class="nav-brand">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="stage1.html">Stage 1</a></li>
+            <li><a href="stage2.html">Stage 2</a></li>
+            <li><a href="projet.html" class="active">Projets</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="container fade-in">
+        <section class="projects-section">
+            <h1 class="gradient-text text-center">Mes Réalisations</h1>
+            <p class="text-center section-subtitle">Une sélection de mes travaux personnels et académiques.</p>
+
+            <div class="projects-grid">
+                <article class="project-card glass-effect scroll-reveal">
+                    <div class="project-image" style="background: linear-gradient(135deg, #6366f1, #a855f7);">
+                        <span>App Mobile</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>Une application mobile permettant d'organiser son emploi du temps avec système de
+                            notifications et de priorisation.</p>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary glass-effect"
+                            style="margin-top: 1rem; width: 100%; text-align: center;">Voir sur GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect scroll-reveal" style="transition-delay: 0.1s;">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                        <span>E-Commerce</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Boutique de Vêtements</h3>
+                        <p>Plateforme complète de e-commerce intégrant un système de paiement sécurisé, panier dynamique
+                            et panel administrateur.</p>
+                        <div class="tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary glass-effect"
+                            style="margin-top: 1rem; width: 100%; text-align: center;">Visiter le site</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect scroll-reveal" style="transition-delay: 0.2s;">
+                    <div class="project-image" style="background: linear-gradient(135deg, #10b981, #3b82f6);">
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse de Données Crypto</h3>
+                        <p>Tableau de bord interactif visualisant les tendances des crypto-monnaies en temps réel via
+                            des API publiques.</p>
+                        <div class="tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">API REST</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary glass-effect"
+                            style="margin-top: 1rem; width: 100%; text-align: center;">Voir la Démo</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="index.html" class="btn btn-primary">Retour à l'Accueil</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
