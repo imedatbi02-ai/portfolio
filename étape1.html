@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Stage 1</title>
+    <meta name="description" content="Portfolio professionnel - Déploiement IPTV Lycée Aragon-Picasso">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="navbar glass-effect">
+        <div class="nav-brand">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="étape1.html" class="active">Stage 1</a></li>
+            <li><a href="étape2.html">Stage 2</a></li>
+            <li><a href="projet.html">Projets</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="container fade-in">
+        <section class="content-section">
+            <h1 class="gradient-text">Expérience : Stage 1</h1>
+
+            <div class="experience-header glass-effect">
+                <div class="company-info">
+                    <h2>Lycée Polyvalent Aragon-Picasso</h2>
+                    <span class="date-badge">Givors, Académie de Lyon</span>
+                </div>
+                <p class="role">Déploiement d'une solution IPTV</p>
+            </div>
+
+            <div class="reflection-box glass-effect scroll-reveal">
+                <h3>🏢 Présentation de l'établissement</h3>
+                <p>Enseignement secondaire & supérieur (général, techno, pro, BTS) accueillant entre 1 500 et 1 600
+                    élèves. L'équipe comprend le personnel éducatif, des enseignants sur plusieurs filières, ainsi que
+                    le personnel vie scolaire et technique.</p>
+
+                <h4 style="margin: 1.5rem 0 0.5rem; color: var(--primary-color);">Département Informatique (DSI -
+                    Direction des Systèmes d'Information)</h4>
+                <ul
+                    style="list-style-type: none; padding-left: 0; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>👉 Interne :</strong> Support quotidien au lycée, gestion
+                        du réseau, dépannage des ordinateurs, aide pour l'ENT.</li>
+                    <li><strong>👉 Externe :</strong> Services techniques gérés à l’extérieur (hébergement de l'ENT,
+                        maintenance des serveurs, sécurité informatique).</li>
+                </ul>
+
+                <!-- Placeholder ou Vraie image de présentation -->
+                <div class="image-wrapper">
+                    <img src="images/presentation-lycee.jpg" alt="Lycée Polyvalent Aragon-Picasso" class="content-img"
+                        onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/a855f7?text=Image+2:+Presentation+Lycee'">
+                </div>
+            </div>
+
+            <h2 class="gradient-text text-center section-title" style="margin: 4rem 0 1rem; font-size: 2.5rem;">Mon
+                Projet</h2>
+            <h3 class="text-center" style="margin-bottom: 2rem; color: var(--text-secondary);">🛠 Démarche</h3>
+
+            <div class="timeline">
+                <div class="timeline-item glass-effect scroll-reveal">
+                    <h3>1. Test initial des antennes TNT</h3>
+                    <p>Pour vérifier la réception des signaux, nous avons connecté les antennes TNT aux boîtiers ALCAD à
+                        l’aide de câbles RJ45. Les résultats ont permis de confirmer la bonne réception des signaux TNT.
+                    </p>
+                    <div class="image-wrapper">
+                        <img src="images/station-alcad.jpg" alt="Station de tête ALCAD raccordée" class="content-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/6366f1?text=Image+1:+Antennes'">
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-effect scroll-reveal" style="transition-delay: 0.1s;">
+                    <h3>2. Configuration réseau de la station de tête</h3>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1.5rem;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--glass-border);">🌐 <strong>Adresse
+                                IP :</strong> 192.168.170.X (attribuée en IPv4 statique, X variant entre 18 et 22 selon
+                            le plan d’adressage)</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--glass-border);">🛣️
+                            <strong>Passerelle par défaut :</strong> 192.168.170.254
+                        </li>
+                        <li style="padding: 0.5rem 0;">🔗 <strong>DNS :</strong> 80.10.246.2 (fourni par
+                            l’établissement)</li>
+                    </ul>
+                    <div class="image-wrapper">
+                        <img src="images/set-top-box-alcad.jpg" alt="Set Top Box ALCAD" class="content-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/ec4899?text=Image+2:+Boitier+IPTV'">
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-effect scroll-reveal" style="transition-delay: 0.2s;">
+                    <h3>3. Branchement et structuration réseau</h3>
+                    <p>L’ensemble des branchements et la structuration réseau des appareils est connecté via la baie de
+                        brassage et le switch Cisco SF-100-16.</p>
+                    <p>Chaque équipement a été relié à une prise réseau configurée.</p>
+                    <div class="image-wrapper">
+                        <img src="images/baie-brassage.jpg" alt="Baie de brassage" class="content-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/a855f7?text=Image+3:+Baie+Brassage'">
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-effect scroll-reveal" style="transition-delay: 0.3s;">
+                    <h3>4. Accès aux chaînes IPTV</h3>
+                    <p>Accès aux chaînes IPTV ensuite pour vérification de la bonne diffusion.</p>
+                    <p><strong>Téléviseur utilisé :</strong> Samsung LE32R81B</p>
+                    <div class="image-wrapper">
+                        <img src="images/ecran-tv.jpg" alt="Test d'accès sur écran TV" class="content-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/3b82f6?text=Image+4:+Ecran+TV'">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reflection-box glass-effect scroll-reveal"
+                style="transition-delay: 0.3s; margin-top: 4rem; border-top: 4px solid var(--primary-color);">
+                <h3 style="color: var(--text-primary);">✅ Conclusion</h3>
+                <p>L’installation permet de distribuer des chaînes IPTV dans un environnement structuré via une station
+                    de tête, tout en s’appuyant sur des ressources réseau internes. Cette configuration offre une
+                    solution évolutive pour la diffusion multi chaînes dans un établissement scolaire ou tout autre
+                    environnement institutionnel.</p>
+                <div class="image-wrapper">
+                    <img src="images/schema-iptv.png" alt="Schéma d'architecture IPTV" class="content-img"
+                        onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/6366f1?text=Image+1:+Le+schema+Conclusion'">
+                </div>
+            </div>
+
+            <h2 class="gradient-text text-center section-title" style="margin: 4rem 0 2rem;">Autres missions réalisées
+            </h2>
+
+            <div class="image-grid-2" style="margin-bottom: 4rem; gap: 2rem;">
+                <div class="glass-effect scroll-reveal"
+                    style="padding: 2rem; border-radius: 16px; display: flex; flex-direction: column;">
+                    <h3 style="font-size: 1.4rem;">ERM à distance</h3>
+                    <p style="flex-grow: 1; font-size: 1.05rem;">Pilotage via PC portable fournisseur.</p>
+                    <div class="image-wrapper" style="margin-top: auto;">
+                        <img src="images/erm-automatismes.jpg" alt="Ecran ERM Automatismes" class="content-img zoomable"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/6366f1?text=Image:+ERM+Automatismes'"
+                            style="max-height: 600px;">
+                    </div>
+                </div>
+
+                <div class="glass-effect scroll-reveal"
+                    style="padding: 2rem; border-radius: 16px; transition-delay: 0.1s; display: flex; flex-direction: column;">
+                    <h3 style="font-size: 1.4rem;">Test de matériel</h3>
+                    <p style="flex-grow: 1; font-size: 1.05rem;">Vérification boîtiers IPTV, câbles et TV.</p>
+                    <div class="image-wrapper" style="margin-top: auto;">
+                        <img src="images/test-materiel.jpg" alt="Connectiques et tests matériels"
+                            class="content-img zoomable"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/ec4899?text=Image:+Test+Materiel'"
+                            style="max-height: 600px; transform: scale(1.15);">
+                    </div>
+                </div>
+
+                <div class="glass-effect scroll-reveal"
+                    style="padding: 2rem; border-radius: 16px; transition-delay: 0.2s; display: flex; flex-direction: column;">
+                    <h3 style="font-size: 1.4rem;">Cours Terminales</h3>
+                    <p style="flex-grow: 1; font-size: 1.05rem;">Sensibilisation RGPD, CNIL et bases HTML.</p>
+                    <div class="image-wrapper" style="margin-top: auto;">
+                        <img src="images/cours-cyber.jpg" alt="Logo CNIL et RGPD" class="content-img zoomable"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/a855f7?text=Image:+Cours+Cybersecurite'"
+                            style="max-height: 600px;">
+                    </div>
+                </div>
+
+                <div class="glass-effect scroll-reveal"
+                    style="padding: 2rem; border-radius: 16px; transition-delay: 0.3s; display: flex; flex-direction: column;">
+                    <h3 style="font-size: 1.4rem;">Remplacement écran</h3>
+                    <p style="flex-grow: 1; font-size: 1.05rem;">Passage sur Philips avec DisplayPort.</p>
+                    <div class="image-wrapper" style="margin-top: auto;">
+                        <img src="images/ecran-philips.jpg" alt="Ecran Philips" class="content-img zoomable"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/3b82f6?text=Image:+Ecran+Philips'"
+                            style="max-height: 600px;">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center" style="margin: 5rem 0 3rem; color: var(--primary-color);">Conclusion</h2>
+            <div class="glass-effect scroll-reveal"
+                style="padding: 2rem; border-radius: 16px; text-align: center; margin-bottom: 4rem;">
+                <p style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0; line-height: 1.8;">
+                    Ce stage m'a apporté de solides <strong>compétences techniques en informatique</strong>. J'ai eu la
+                    chance d'évoluer dans une <strong>excellente ambiance de travail</strong>, offrant un cadre idéal
+                    pour mon apprentissage !
+                </p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="index.html" class="btn btn-secondary glass-effect">&larr; Présentation</a>
+                <a href="étape2.html" class="btn btn-primary">Découvrir le Stage 2 &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
