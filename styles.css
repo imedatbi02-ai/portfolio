@@ -708,6 +708,15 @@ footer {
     margin-bottom: 4rem;
 }
 
+.single-column-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
 @media (max-width: 768px) {
     .image-grid-2 {
         grid-template-columns: 1fr;
